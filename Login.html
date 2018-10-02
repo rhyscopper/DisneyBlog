@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html>
+
+<head>
+<style>
+	body {background:$bgcolor;background-image:url("Background.jpg");background-position: center; background-repeat:no-repeat; background-attachment: fixed;margin:0; color:red; font:Georgia Serif; font-size:50; text-align: center;} 
+h1      {
+		font-size:27pt;	
+		}
+p		{
+		font-size:14pt;
+		}		
+p1		{
+		font-size:20pt;
+        }
+</style>
+</head>
+
+<body>
+	<br>
+	<img src="Title.png" alt="Title" style="width:400;height:100px">
+	<br \><br \><br \><br \>
+	<h1> Log in to add entry! </h1>
+	<form action="login.php" method="post">
+	<p class="indent">
+	Username:&nbsp;<input  type="text", name="username", size="20" />
+	</p>
+	<p class="indent">
+	Password:&nbsp;<input id="password" type="password", name="pass", size="20" maxlength="20"/>
+	</p>
+	<p1 class="indent">
+	
+	<input type ="submit" value="Login" />
+	</p1>
+	</form>
+</body>

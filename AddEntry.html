@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html>
+<head>
+<style>
+
+	body {background:$bgcolor;background-image:url("Background2.jpg");background-position: center; background-repeat:no-repeat; background-attachment: fixed;margin:0; color:red; font:Georgia Serif; font-size:50; text-align: center;} 
+		}
+h1      {
+		font-size:27pt;	
+		}
+p		{
+		font-size:14pt;
+		
+     	}
+		
+p1      {
+		font-size: 14pt;
+		color: black;
+}
+p2      {
+		font-size: 14pt;
+		color: black;
+}
+p3      {
+		font-size: 14pt;
+		padding-right: 275px;
+}
+p4		{
+		padding-bottom: 100px;
+		padding-right: 725px;
+        }
+p5		{
+		vertical-align: bottom;
+		padding-right: 250px;
+        }
+button{vertical-align:top;
+       margin-bottom:5px;
+		margin-top:-39px;
+		}
+       
+		#text{vertical-align:top;}
+</style>
+</head>
+
+<body>
+<h1><img src="Title2.png" alt="Title" style="width:400;height:100px"></font></h1>
+<p1><font face="serif">
+Instructions: Enter a title and body for your blog entry. In the body, you can use simple HTML formatting
+</p1>
+<br \>
+<p2>
+elements, such as &ltb&gt (bold) and &lti&gt (italic) as well as the hyperlink "anchor" element &lta&gt.
+</p2>
+<div>&nbsp;</div>
+<font face="sans-serif">
+<form action="AddEntry.php" method="post">
+<p3>
+Title:&nbsp;&nbsp;<input id="Title", type = "text", name = "Title", size = "80"/>
+</p3>
+<p id="text">Body:
+<textarea id ="Body" name="Body" rows="25" cols="120"></textarea>
+<br/>
+</p>
+<p4>
+<input type ="submit" value= "  Add Entry  "/>
+</p4>
+</form>
+<br>
+<p5>
+<button onclick="myFunction()">Clear</button>
+</p5>
+<script>
+function myFunction() 
+	{
+    if (confirm("Clear?") == true) 
+	{
+       document.getElementById("Body").value="";
+	   document.getElementById("Title").value="";
+    } 
+	else 
+	{
+        
+    }
+	}
+</script>
+</body>
+</html>
